@@ -7,8 +7,10 @@
 
     <meta name="description" content="">
     <meta name="author" content="Edgar Gulay">
-    <meta name="description" content="Edgar, Software developer based in Dar es Salaam, Tanzania. Specializing in building robust and scalable backend and frontend solutions for small and medium-sized businesses. Services include web and API integrations, custom software development.">
-    <meta name="keywords" content="Edgar, Gulay, edgargulay, software developer, Dar es Salaam, Tanzania, backend solutions, web development, web map integrations, ecommerce, business management systems, custom software development, small and medium-sized businesses">
+    <meta name="description"
+        content="Edgar, Software developer based in Dar es Salaam, Tanzania. Specializing in building robust and scalable backend and frontend solutions for small and medium-sized businesses. Services include web and API integrations, custom software development.">
+    <meta name="keywords"
+        content="Edgar, Gulay, edgargulay, software developer, Dar es Salaam, Tanzania, backend solutions, web development, web map integrations, ecommerce, business management systems, custom software development, small and medium-sized businesses">
 
     <title>Edgar G.</title>
 
@@ -28,7 +30,6 @@
     <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet">
 
     <link rel="icon" href="images/favico.png">
-
 
 
 </head>
@@ -321,7 +322,7 @@
                     </div>
 
                     <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-                        <form action="#" method="get" class="custom-form contact-form" role="form">
+                        <form action="#" method="get" class="custom-form contact-form" role="form" id="form">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="form-floating">
@@ -343,8 +344,8 @@
 
                                 <div class="col-lg-3 col-md-6 col-6">
                                     <div class="form-check form-check-inline">
-                                        <input name="website" type="checkbox" class="form-check-input"
-                                            id="inlineCheckbox1" value="1">
+                                        <input name="service" type="checkbox" class="form-check-input"
+                                            id="inlineCheckbox1" value="website">
 
                                         <label class="form-check-label" for="inlineCheckbox1">
                                             <i class="bi-globe form-check-icon"></i>
@@ -355,20 +356,20 @@
 
                                 <div class="col-lg-3 col-md-6 col-6">
                                     <div class="form-check form-check-inline">
-                                        <input name="branding" type="checkbox" class="form-check-input"
-                                            id="inlineCheckbox2" value="1">
+                                        <input name="service" type="checkbox" class="form-check-input"
+                                            id="inlineCheckbox2" value="Map">
 
                                         <label class="form-check-label" for="inlineCheckbox2">
                                             <i class="bi-map form-check-icon"></i>
-                                            <span class="form-check-label-text">Map</span>
+                                            <span class="form-check-label-text">Maps</span>
                                         </label>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-3 col-md-6 col-6">
                                     <div class="form-check form-check-inline">
-                                        <input name="ecommerce" type="checkbox" class="form-check-input"
-                                            id="inlineCheckbox3" value="1">
+                                        <input name="service" type="checkbox" class="form-check-input"
+                                            id="inlineCheckbox3" value="Ecommerce">
 
                                         <label class="form-check-label" for="inlineCheckbox3">
                                             <i class="bi-phone form-check-icon"></i>
@@ -379,8 +380,8 @@
 
                                 <div class="col-lg-3 col-md-6 col-6">
                                     <div class="form-check form-check-inline me-0">
-                                        <input name="seo" type="checkbox" class="form-check-input" id="inlineCheckbox4"
-                                            value="1">
+                                        <input name="service" type="checkbox" class="form-check-input"
+                                            id="inlineCheckbox4" value="other">
 
                                         <label class="form-check-label" for="inlineCheckbox4">
                                             <i class="bi-braces form-check-icon"></i>
@@ -399,6 +400,7 @@
                                 </div>
 
                                 <div class="col-lg-3 col-12 ms-auto">
+                                    <div class="col-12 p-3 text-center" id="msg"></div>
                                     <button type="submit" class="form-control">Send</button>
                                 </div>
 
@@ -421,6 +423,71 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/magnific-popup-options.js"></script>
     <script src="js/custom.js"></script>
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
+    <script>
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBPxtuqx_3q6gtpAn7MeuVbqzJrjoKzR2s",
+            authDomain: "eddiefolio.firebaseapp.com",
+            databaseURL: "https://eddiefolio-default-rtdb.firebaseio.com/",
+            projectId: "eddiefolio",
+            storageBucket: "eddiefolio.appspot.com",
+            messagingSenderId: "1032147218531",
+            appId: "1:1032147218531:web:db600ddb1db0bcb4868856",
+            measurementId: "G-GV843X5GE9"
+        };
+
+        // Initialize Firebase
+        const app = firebase.initializeApp(firebaseConfig);
+        var database = firebase.database();
+
+        // Get the form element
+        var form = document.getElementById("form");
+
+        // Handle form submission
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // Get form data
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var checkboxes = document.querySelectorAll('input[name="service"]:checked');
+            var checkedValues = [];
+            checkboxes.forEach(function (checkbox) {
+                checkedValues.push(checkbox.value);
+            });
+
+            var message = document.getElementById("message").value;
+
+            // Save data to Firebase Realtime Database
+            var newFormData = database.ref().child("form_data").push();
+            newFormData.set({
+                name: name,
+                email: email,
+                service: checkedValues,
+                message: message
+            });
+
+            // Show success message
+            document.getElementById("msg").innerHTML="Message Sent!"
+
+            // Clear form fields
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("message").value = "";
+
+            document.setTimeout(()=>{
+                document.getElementById("msg").innerHTML=""
+                clearTimeout(this)
+            }, 2000)
+        });
+    </script>
+
+    </script>
 
 </body>
 
