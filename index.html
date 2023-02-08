@@ -570,7 +570,7 @@
             // get time and date
             var date = new Date();
             // Save data to Firebase Realtime Database
-            var newFormData = database.ref().child("form_data").push();
+            var newFormData = database.ref().child("client_reachout").push();
             newFormData.set({
                 name: name,
                 email: email,
