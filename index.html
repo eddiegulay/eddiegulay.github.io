@@ -567,14 +567,16 @@
             });
 
             var message = document.getElementById("message").value;
-
+            // get time and date
+            var date = new Date();
             // Save data to Firebase Realtime Database
             var newFormData = database.ref().child("form_data").push();
             newFormData.set({
                 name: name,
                 email: email,
                 service: checkedValues,
-                message: message
+                message: message,
+                time_sent: date
             });
 
             // Show success message
