@@ -537,6 +537,14 @@ strong {
   pointer-events: none;
 }
 
+@media (max-width: 460px) {
+  #action_text, #action_head{
+    font-weight: lighter;
+    border-radius: 10px;
+  }
+}
+  
+
 
 /*---------------------------------------
   ABOUT              
