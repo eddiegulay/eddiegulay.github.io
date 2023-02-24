@@ -63,7 +63,7 @@ form.addEventListener("submit", function (event) {
     }).done(function () {
         document.getElementById("msg").innerHTML = "Auto response Email Sent.."
     }).fail(function (error) {
-        alert('Oops... ' + JSON.stringify(error));
+        document.getElementById("msg").innerHTML = "Auto response failed.."
     });
 
     // Show success message
