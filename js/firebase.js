@@ -61,21 +61,21 @@ form.addEventListener("submit", function (event) {
         data: JSON.stringify(data),
         contentType: 'application/json'
     }).done(function () {
-        alert('Your mail is sent!');
+        document.getElementById("msg").innerHTML = "Auto response Email Sent.."
     }).fail(function (error) {
         alert('Oops... ' + JSON.stringify(error));
     });
 
     // Show success message
-    document.getElementById("msg").innerHTML = "Message Sent!"
+    document.getElementById("msg").innerHTML = "Message Received!"
 
     // Clear form fields
     document.getElementById("name").value = "";
     document.getElementById("email").value = "";
     document.getElementById("message").value = "";
 
-    setTimeout(() => {
+    var time_out = setTimeout(() => {
         document.getElementById("msg").innerHTML = ""
-        clearTimeout(this)
+        clearTimeout(time_out)
     }, 2000)
 });
