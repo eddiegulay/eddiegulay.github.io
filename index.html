@@ -1,7 +1,8 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="title" content="Edgar G. | Software Developer">
@@ -25,84 +26,609 @@
     <meta name="twitter:card" content="summary_large_image">
     <title>Edgar G. | Software Developer</title>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  
-  <link rel="stylesheet" href="css/demo.css" />
-  <link rel="stylesheet" href="css/templatemo-style.css">
-  
-  <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
-		
-	<style>
-		/* add background blur to #particles-js */
-		#particles-js {
-			background-color: rgba(0, 0, 0, 1);
-			background-blend-mode: overlay;
-			z-index: -1;
-		}
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/portfolio-style.css" rel="stylesheet">
+    <link rel="icon" href="images/favico.png">
 
-	</style>
-	</head>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-	<body>
+</head>
 
-			<div id="particles-js"></div>
-		
-			<ul class="cb-slideshow">
-	            <li></li>
-	            <li></li>
-	            <li></li>
-	            <li></li>
-	            <li></li>
-	            <li></li>
-	        </ul>
+<body>
 
-			<div class="container-fluid">
-				<div class="row cb-slideshow-text-container ">
-					<div class= "tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
-					<header class="mb-5"><h1>Edgar G.</h1></header>
-					<P class="mb-5"></P>
-				
-                    
-					<div class="tm-social-icons-container text-xs-center">
-<a href="https://eddiegulay.me/original" class="tm-social-link"><i class="fa fa-globe fa-spin"></i></a>
+    <section class="preloader" style="display:none;">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
+        </div>
+    </section>
 
-	                    <a href="https://twitter.com/eddiegulay" class="tm-social-link"><i class="fa fa-twitter"></i></a>
-	                    <a href="https://github.com/eddiegulay" class="tm-social-link"><i class="fa fa-github"></i></a>
-   
-	                </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
 
-					</div>
-				</div>	
-			</div>	
-	</body>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-	<script type="text/javascript" src="js/particles.js"></script>
-	<script defer async>
-  document.addEventListener('DOMContentLoaded', function() {
-    // setting global variables
-    window.botId = 1253
-    
-    // create div with id = sarufi-chatbox
-    const div = document.createElement("div")
-    div.id = "sarufi-chatbox"
-    document.body.appendChild(div)
+            <a href="index.html" class="navbar-brand mx-auto mx-lg-0">Edgar G.</a>
 
-    // create and attach script tag
-    const script = document.createElement("script")
-    script.crossOrigin = true
-    script.type = "module"
-    script.src = "https://cdn.jsdelivr.net/gh/flexcodelabs/sarufi-chatbox/example/vanilla-js/script.js"
-    document.head.appendChild(script)
+            <!-- <div class="d-flex align-items-center d-lg-none" style="display:none;">
+                <i class="navbar-icon bi-telephone-plus me-3"></i>
+                <a class="custom-btn btn" href="#section_5">
+                    +255672204508
+                </a>
+            </div> -->
 
-    // create and attach css
-    const style = document.createElement("link")
-    style.crossOrigin = true
-    style.rel = "stylesheet"
-    style.href = "https://cdn.jsdelivr.net/gh/flexcodelabs/sarufi-chatbox/example/vanilla-js/style.css"
-    document.head.appendChild(style)
-  });
-</script>
-	<script type="text/javascript" src="js/app.js"></script>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-lg-5">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_1">Home</a>
+                    </li>
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_2">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_3">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_4">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                    </li> -->
+
+                </ul>
+
+                <!-- <div class="d-lg-flex align-items-center d-none ms-auto" style="display:none;">
+                    <i class="navbar-icon bi-telephone-plus me-3"></i>
+                    <a class="custom-btn btn" href="#section_5">
+                        +255672204508
+                    </a>
+                </div> -->
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+
+
+        <section class="about section-padding" id="section_2">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <img src="images/about.png" class="about-image img-fluid" alt="about Edgar Gulay">
+                    </div>
+
+                    <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                        <div class="about-thumb">
+
+                            <div class="section-title-wrap d-flex justify-content-end align-items-center mb-4">
+                                <h2 class="text-white me-4 mb-0">About Me</h2>
+
+                                <img src="images/font-view.jpg" class="avatar-image img-fluid" alt="">
+                            </div>
+
+                            <h3 class="pt-2 mb-3">a little bit about Edgar G.</h3>
+                            <p>
+                                Software developer with a passion for building backend solutions for small and
+                                medium-sized businesses.
+
+                                Mostly Automating business processes and eliminating repetitive tasks freeing that
+                                valuable time and resources that could be used somewhere else
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="clients section-padding">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-12 col-12">
+                        <h3 class="text-center mb-5">Tech Stack</h3>
+                    </div>
+
+                    <div class="col-lg-2 col-4 ms-auto clients-item-height">
+                        <img src="images/tech/4846343.png" class="clients-image img-fluid" alt="python developer">
+                    </div>
+
+                    <div class="col-lg-2 col-4 clients-item-height">
+                        <img src="images/tech/9055848_bxl_django_icon.png" class="clients-image img-fluid"
+                            alt="django web developer">
+                    </div>
+
+                    <div class="col-lg-2 col-4 clients-item-height">
+                        <img src="images/tech/8547063_php_icon.png" class="clients-image img-fluid" alt="php developer">
+                    </div>
+
+                    <div class="col-lg-2 col-4 clients-item-height">
+                        <img src="images/tech/9035061_logo_javascript_icon.png" class="clients-image img-fluid"
+                            alt="javascript developer">
+                    </div>
+
+                    <div class="col-lg-2 col-4 me-auto clients-item-height">
+                        <img src="images/tech/1012821_code_development_logo_mysql_icon.png"
+                            class="clients-image img-fluid" alt="mysql programmer">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="projects section-padding" id="section_3">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8 col-md-8 col-12 ms-auto">
+                        <div class="section-title-wrap d-flex justify-content-center align-items-center mb-4">
+                            <img src="images/Freelancer-rafiki.png" class="avatar-image img-fluid" alt="">
+
+                            <h2 class="text-white ms-4 mb-0">Projects</h2>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="projects-thumb">
+                            <div class="projects-info">
+                                <small class="projects-tag">Mobile App</small>
+
+                                <h3 class="projects-title">Lex Mobile</h3>
+                                <a href="https://play.google.com/store/apps/details?id=tz.co.lex"
+                                    class="btn btn-sm px-3 py-2 mb-3 bg-dark text-light text-center"
+                                    style="border-radius: 100px;">Check in playstore</a>
+                            </div>
+
+                            <a href="images/projects/lex_mobile.png" class="popup-image">
+                                <img src="images/projects/lex_mobile.png" class="projects-image img-fluid" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="projects-thumb">
+                            <div class="projects-info">
+                                <small class="projects-tag">website</small>
+
+                                <h3 class="projects-title">Lex Co</h3>
+                                <a href="https://lex.co.tz/" target="_blank"
+                                    class="btn btn-sm px-3 py-2 mb-3 bg-dark-light text-dark"
+                                    style="border-radius: 100px;background-color: #F9A743;">Open Website</a>
+                            </div>
+
+                            <a href="images/projects/lex_web.png" class="popup-image">
+                                <img src="images/projects/lex_img.png" class="projects-image img-fluid" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="projects-thumb">
+                            <div class="projects-info">
+                                <small class="projects-tag">Geographical Info System </small>
+
+                                <h3 class="projects-title">Cooler Finder</h3>
+                                <span class="btn btn-sm px-3 py-2 mb-3 bg-dark text-secondary text-center"
+                                    style="border-radius: 100px;background-color: #f60202;">Private access</span>
+
+                            </div>
+
+                            <a href="images/projects/rtm/map-near.png" class="popup-image rounded">
+                                <img src="images/projects/rtm/map-globe.png" class="projects-image img-fluid" alt="">
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12" id="necta-api">
+                        <div class="projects-thumb">
+                            <div class="projects-info">
+                                <small class="projects-tag">NATURAL LANGUAGE PROCESSING</small>
+
+                                <h3 class="projects-title">Named Entity Recognition</h3>
+                                <a href="https://gulay.pythonanywhere.com/ner" target="_blank"
+                                    class="btn btn-sm px-3 py-2 mb-3 bg-dark text-light text-center"
+                                    style="border-radius: 100px;background-color: #862a93;">Try it out</a>
+
+                            </div>
+
+                            <a href="/images/projects/ner_.png" class="popup-image rounded">
+                                <img src="/images/projects/ner.png" class="projects-image img-fluid" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="projects-thumb">
+                            <div class="projects-info">
+                                <small class="projects-tag">Management System </small>
+
+                                <h3 class="projects-title">Beauty Parlour</h3>
+                                <a href="https://github.com/eddiegulay/beauty_parlour_management_system.git"
+                                    target="_blank" class="btn btn-sm px-3 py-2 mb-3 bg-dark text-light text-center"
+                                    style="border-radius: 100px;background-color: #100B0F;">Check in github</a>
+
+                            </div>
+
+                            <a href="images/projects/bpms_front.png" class="popup-image">
+                                <img src="images/projects/bpms_reservation.png" class="projects-image img-fluid" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="projects-thumb">
+                            <div class="projects-info">
+                                <small class="projects-tag">Developer Library </small>
+
+                                <h3 class="projects-title">EasyDom js</h3>
+                                <a href="https://github.com/eddiegulay/Easy-Dom" target="_blank"
+                                    class="btn btn-sm px-3 py-2 mb-3 bg-dark text-light text-center"
+                                    style="border-radius: 100px;background-color: #862a93;">Check in github</a>
+
+                            </div>
+
+                            <a href="images/projects/easyDom.jpeg" class="popup-image">
+                                <img src="images/projects/easyDom-sqr.jpeg" class="projects-image img-fluid" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12" id="necta-api">
+                        <div class="projects-thumb">
+                            <div class="projects-info">
+                                <small class="projects-tag">Web API </small>
+
+                                <h3 class="projects-title">NECTA Results API</h3>
+                                <a href="https://github.com/eddiegulay/NECTA-Results-API" target="_blank"
+                                    class="btn btn-sm px-3 py-2 mb-3 bg-dark text-light text-center"
+                                    style="border-radius: 100px;background-color: #862a93;">Check in github</a>
+                                
+
+                            </div>
+
+                            <a href="https://repository-images.githubusercontent.com/651475060/c7456f1c-8a6c-4b60-836f-ee3bfd534b36"
+                                class="popup-image rounded">
+                                <img src="/images/projects/necta-git.png" class="projects-image img-fluid" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12" id="necta-api">
+                        <div class="projects-thumb">
+                            <div class="projects-info">
+                                <small class="projects-tag">MANAGEMENT SYSTEM</small>
+
+                                <h3 class="projects-title">Waste management</h3>
+                                <a href="https://github.com/eddiegulay/waste-management-system" target="_blank"
+                                    class="btn btn-sm px-3 py-2 mb-3 bg-dark text-light text-center"
+                                    style="border-radius: 100px;background-color: #862a93;">Check in github</a>
+
+                            </div>
+
+                            <a href="/images/projects/wms.png" class="popup-image rounded">
+                                <img src="/images/projects/wms.jpg" class="projects-image img-fluid" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+        </section>
+
+
+        <!-- <section class="services section-padding" id="section_4">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-10 col-12 mx-auto">
+                        <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
+                            <img src="images/business-deal-bro.png" class="avatar-image img-fluid" alt="">
+
+                            <h2 class="text-white ms-4 mb-0">Services</h2>
+                        </div>
+
+                        <div class="row pt-lg-5">
+                            <div class="col-lg-6 col-12">
+                                <div class="services-thumb">
+                                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                        <h3 class="mb-0">Websites</h3>
+
+                                        <div class="services-price-wrap ms-auto">
+                                            <p class="services-price-text mb-0"></p>
+                                            <div class="services-price-overlay"></div>
+                                        </div>
+                                    </div>
+
+                                    <p>Creating custom-designed websites that are tailored to the client's needs and
+                                        brand identity.</p>
+
+                                    <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+                                        <i class="services-icon bi-globe"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <div class="services-thumb services-thumb-up">
+                                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                        <h3 class="mb-0">Web Map Integrations</h3>
+
+                                        <div class="services-price-wrap ms-auto">
+                                            <p class="services-price-text mb-0"></p>
+                                            <div class="services-price-overlay"></div>
+                                        </div>
+                                    </div>
+
+                                    <p>Implementing and integrating maps on websites to provide location-based
+                                        functionality.</p>
+
+                                    <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+                                        <i class="services-icon bi-map"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <div class="services-thumb">
+                                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                        <h3 class="mb-0">Ecommerce</h3>
+
+                                        <div class="services-price-wrap ms-auto">
+                                            <p class="services-price-text mb-0"></p>
+                                            <div class="services-price-overlay"></div>
+                                        </div>
+                                    </div>
+
+                                    <p>Designing and building online stores that are easy to use and navigate for
+                                        customers, with secure payment processing and inventory management.</p>
+
+                                    <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+                                        <i class="services-icon bi-phone"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <div class="services-thumb services-thumb-up">
+                                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                        <h3 class="mb-0">Business Management Systems</h3>
+
+                                        <div class="services-price-wrap ms-auto">
+                                            <p class="services-price-text mb-0"></p>
+                                            <div class="services-price-overlay"></div>
+                                        </div>
+                                    </div>
+
+                                    <p>Creating custom business management systems with user-friendly dashboards that
+                                        provide clients with real-time data insights and analytics.</p>
+
+                                    <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+                                        <i class="services-icon bi-bar-chart-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <section class="contact section-padding" id="section_5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-8 col-12">
+                        <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
+                            <img src="images/Freelancer-rafiki.png" class="avatar-image img-fluid" alt="">
+
+                            <h2 class="text-white ms-4 mb-0">Let's Talk</h2>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-lg-3 col-md-6 col-12 pe-lg-0">
+                        <div class="contact-info contact-info-border-start d-flex flex-column">
+                            <!-- <strong class="site-footer-title d-block mb-3">Services</strong>
+
+                            <ul class="footer-menu">
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Websites</a></li>
+
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Business Management
+                                        Systems</a></li>
+
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Ecommerce</a></li>
+
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Web map
+                                        Integrations</a></li>
+                            </ul> -->
+
+                            <strong class="site-footer-title d-block mt-4 mb-3">Stay connected</strong>
+
+                            <ul class="social-icon">
+                                <li class="social-icon-item"><a href="https://twitter.com/eddiegulay"
+                                        class="social-icon-link bi-twitter"></a></li>
+                                <li class="social-icon-item"><a href="https://www.linkedin.com/in/edgar-gulay-4bb1b41b0"
+                                        class="social-icon-link bi-linkedin"></a></li>
+                            </ul>
+                            <p class="mt-5">
+                                <a href="mailto:edgargulay@outlook.com">
+                                    edgargulay@outlook.com
+                                </a>
+                            </p>
+                            <p class="mb-0">
+                                <a href="tel:+255672204508">
+                                    +255 672 204 508
+                                </a>
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 ps-lg-0">
+                        <div class="contact-info d-flex flex-column">
+                            <strong class="site-footer-title d-block mb-3">About</strong>
+
+                            <p class="mb-2">
+                                Put your thoughts in that form <i class=" m-2 bi-arrow-right"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                        <form action="#" method="get" class="custom-form contact-form" role="form" id="form">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-floating">
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Name"
+                                            required="">
+
+                                        <label for="floatingInput">Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-floating">
+                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*"
+                                            class="form-control" placeholder="Email address" required="">
+
+                                        <label for="floatingInput">Email address</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-6">
+                                    <div class="form-check form-check-inline">
+                                        <input name="service" type="checkbox" class="form-check-input"
+                                            id="inlineCheckbox1" value="website">
+
+                                        <label class="form-check-label" for="inlineCheckbox1">
+                                            <i class="bi-globe form-check-icon"></i>
+                                            <span class="form-check-label-text">Websites</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-6">
+                                    <div class="form-check form-check-inline">
+                                        <input name="service" type="checkbox" class="form-check-input"
+                                            id="inlineCheckbox2" value="Map">
+
+                                        <label class="form-check-label" for="inlineCheckbox2">
+                                            <i class="bi-map form-check-icon"></i>
+                                            <span class="form-check-label-text">Maps</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-6">
+                                    <div class="form-check form-check-inline">
+                                        <input name="service" type="checkbox" class="form-check-input"
+                                            id="inlineCheckbox3" value="Ecommerce">
+
+                                        <label class="form-check-label" for="inlineCheckbox3">
+                                            <i class="bi-phone form-check-icon"></i>
+                                            <span class="form-check-label-text">Ecommerce</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-6">
+                                    <div class="form-check form-check-inline me-0">
+                                        <input name="service" type="checkbox" class="form-check-input"
+                                            id="inlineCheckbox4" value="other">
+
+                                        <label class="form-check-label" for="inlineCheckbox4">
+                                            <i class="bi-braces form-check-icon"></i>
+                                            <span class="form-check-label-text">other</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" name="message"
+                                            placeholder="Tell me about the project"></textarea>
+
+                                        <label for="floatingTextarea">Tell me about the project</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-12 ms-auto">
+                                    <div class="col-12 p-3 text-center" id="msg"></div>
+                                    <button type="submit" class="form-control">Send</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
+    <script src="js/firebase.js"></script>
+    <script defer async>
+        document.addEventListener('DOMContentLoaded', function () {
+            // setting global variables 
+            window.botId = 1253
+
+            // create div with id = sarufi-chatbox 
+            const div = document.createElement("div")
+            div.id = "sarufi-chatbox"
+            document.body.appendChild(div)
+
+            // create and attach script tag 
+            const script = document.createElement("script")
+            script.crossOrigin = true
+            script.type = "module"
+            script.src = "https://cdn.jsdelivr.net/gh/flexcodelabs/sarufi-chatbox/example/vanilla-js/script.js"
+            document.head.appendChild(script)
+
+            // create and attach css 
+            const style = document.createElement("link")
+            style.crossOrigin = true
+            style.rel = "stylesheet"
+            style.href = "https://cdn.jsdelivr.net/gh/flexcodelabs/sarufi-chatbox/example/vanilla-js/style.css"
+            document.head.appendChild(style)
+        }); 
+    </script>
+</body>
+
 </html>
