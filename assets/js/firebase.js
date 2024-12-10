@@ -9,12 +9,16 @@ const firebaseConfig = {
     measurementId: "G-GV843X5GE9"
 };
 
+var kwargsvc = "service_pkujqbq"
+var kwargstid = "template_2zfgk5n"
+var kwargsuid = "Dw0k96FQwqcfUTl5o"
+
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 var database = firebase.database();
 
 // Get the form element
-var form = document.getElementById("form");
+var form = document.getElementById("contact-form");
 
 // Handle form submission
 form.addEventListener("submit", function (event) {
@@ -23,12 +27,6 @@ form.addEventListener("submit", function (event) {
     // Get form data
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
-    var checkboxes = document.querySelectorAll('input[name="service"]:checked');
-    var checkedValues = [];
-    checkboxes.forEach(function (checkbox) {
-        checkedValues.push(checkbox.value);
-    });
-
     var message = document.getElementById("message").value;
     // get time and date
     var date = new Date();
@@ -37,7 +35,7 @@ form.addEventListener("submit", function (event) {
     newFormData.set({
         name: name,
         email: email,
-        service: checkedValues,
+        service: [],
         message: message,
         time_sent: date.toString()
     });
@@ -49,7 +47,7 @@ form.addEventListener("submit", function (event) {
         template_params: {
             'name': name,
             'email': email,
-            'service': checkedValues,
+            'service': '',
             'message': message,
             'time_sent': date.toString(),
             'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...'

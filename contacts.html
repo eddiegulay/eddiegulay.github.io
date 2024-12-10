@@ -75,7 +75,7 @@
 	<div class="container-full-h container-flex container">
 		<div class="row flex-grow-1 align-items-center">
 			<div class="col-12 col-lg-10 offset-lg-1">
-				<form id="contact-form" data-toggle="validator">
+				<form id="contact-form" data-toggle="" action="#" method="get" class="custom-form contact-form" role="form">
 					<div class="row">
 						<div class="col-12 col-lg-6">
 							<div class="form-group">
@@ -101,6 +101,7 @@
 					<div class="row">
 						<div class="col-12 col-lg-6 order-2 order-lg-1">
 							<div id="validator-contact" class="hidden"></div>
+							<div id="msg"></div>
 						</div>
 						<div class="col-12 col-lg-6 order-1 order-lg-2 text-right">
 							<button type="submit" class="btn">Send Message</button>
@@ -176,7 +177,11 @@
 	<script src="assets/js/plugins.js"></script>
 	<script src="assets/js/common.js"></script>
 
-	<script src="assets/demo/plugins-demo.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
+    <script src="assets/js/firebase.js"></script>
+
 </body>
 
 
