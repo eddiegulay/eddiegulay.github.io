@@ -1,22 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="100">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400');
+    @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Roboto:300,300i,400,400i,500,500i,700,700i");
     .part-eddie {
-      font-family: 'Playfair Display', serif;
-      font-weight: 400;
-      fill: black;
-      font-style: normal;
+      font-family: "Playfair Display", serif;
+      font-weight: 200;
+      line-height: 1.2;
+      margin-bottom: 3.4rem;
     }
     .part-symbol {
-      font-family: 'Playfair Display', serif;
-      font-weight: 900;
-      font-style: normal;
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 3.4rem;
     }
     .part-gulay {
-      font-family: 'Playfair Display', serif;
-      font-weight: 400;
-      fill: black;
-      font-style: normal;
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 3.4rem;
     }
   </style>
   <text x="10" y="70" class="part-eddie" font-size="45">
@@ -25,7 +26,7 @@
   <text x="130" y="70" class="part-symbol" font-size="45">
     ./
   </text>
-  <text x="165" y="70" class="part-gulay" font-size="45">
+  <text x="160" y="70" class="part-gulay" font-size="45">
     gulay
   </text>
 </svg>
