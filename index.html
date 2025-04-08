@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>./gulay</title>
+
+    <!-- Meta Data -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="author" content="eddiegulay" />
+    <meta name="description" content="Eddie Gulay, exploring innovations, projects, and growth." />
+    <meta name="keywords"
+        content="Edgar, Gulay, Edgar Gulay, eddiegulay, software developer, Software developer in Dar es Salaam,">
+    <meta name="robots" content="index, follow">
+
+    <!-- Twitter data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@eddiegulay">
+    <meta name="twitter:title" content="./gulay">
+    <meta name="twitter:description"
+        content="Eddie Gulay. Explore projects, tools, and contributions in the tech world.">
+    <meta name="twitter:image" content="assets/images/favico.png">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="./gulay" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eddiegulay.github.io" />
+    <meta property="og:image" content="assets/images/favico.png" />
+    <meta property="og:description"
+        content="A deep dive into Eddie Gulay's journey in tech, from challenges to insights and growth." />
+    <meta property="og:site_name" content="./gulay" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/favicon.svg">
+    <link rel="shortcut icon" href="assets/images/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/images/favico.png">
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/demo/style-demo.css" />
+
+
+
+    <!-- EB Garamond font -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background-color: #111;
+            color: #fff;
+            font-family: 'EB Garamond', serif;
+        }
+
+        #typewriter-container {
+            max-width: 800px;
+            width: 90%;
+            font-size: 2rem;
+            line-height: 1.5;
+            white-space: pre-wrap;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 12px;
+            background-color: #fff;
+            margin-left: 4px;
+            animation: blink 1s step-start infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* Button styling */
+        .top-left-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #fff;
+            color: #111;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .top-left-button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="/home.html" class="top-left-button">More ?</a>
+    <div id="typewriter-container">
+        <span id="typed-text"></span><span class="cursor"></span>
+    </div>
+    <script src="assets/js/alan.js"></script>
+    <script>
+        let index = 0;
+        const typedTextEl = document.getElementById('typed-text');
+        const baseDelay = 40;
+
+        function typewriter() {
+            if (index < originalText.length) {
+                const char = originalText.charAt(index);
+
+                typedTextEl.textContent += char;
+                index++;
+
+                let delay = baseDelay;
+                if (char === ',') {
+                    delay = 200;
+                } else if (char === '.' || char === '!') {
+                    typedTextEl.textContent += '\n';
+                    delay = 600;
+                } else if (char === '?') {
+                    typedTextEl.textContent += '\n\n';
+                    delay = 800;
+                }
+
+                setTimeout(typewriter, delay);
+            } else {
+                document.querySelector('.cursor').style.display = 'none';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            typewriter();
+        });
+    </script>
+
+</body>
+
+</html>
