@@ -39,4 +39,7 @@ You are all of them and when they come into being as you come into being.
 
 You know that very well.
 
-Only you don’t have to remember the past in the same way you don’t have to think about you work thyroid gland or whatever else it is in your organism. You don’t have to know how to shine the sun, "You just do it". Like you breathe. Doesn't it really astonish you that you are the fantastically complex thing and that you’re doing all of this and you never had any education on how to do it.`;
+Only you don’t have to remember the past in the same way you don’t have to think about you work thyroid gland or whatever else it is in your organism. You don’t have to know how to shine the sun, "You just do it". Like you breathe. Doesn't it really astonish you that you are the fantastically complex thing and that you’re doing all of this and you never had any education on how to do it.
+
+
+~ Alan Watts`;
