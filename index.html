@@ -55,19 +55,6 @@
             letter-spacing: 0.03em;
             margin: 0;
         }
-        .pdf-column {
-            flex: 2;
-            min-width: 300px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .pdf-column iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
@@ -82,38 +69,75 @@
             .question-column p {
                 font-size: 24px;
             }
-            .pdf-column {
-                min-height: 400px;
-                padding: 0 20px 20px;
-            }
-            .pdf-column iframe {
-                height: 400px;
-            }
         }
     </style>
 </head>
 <body>
     <div id="particles-js"></div>
-    <div class="container">
-        <div class="question-column">
+    <div class="container" style="max-width:900px;">
+        <div class="question-column" style="flex:1 1 100%; min-width:unset; max-width:100vw;">
             <h1>Q:</h1>
             <p>
                 Can principles from natural phenomena specifically chaos, entropy and morphogenesis be applied to software development to create more resilient, adaptable, and efficient systems?
             </p>
-        </div>
-        <div class="pdf-column">
-            <iframe src="https://eddiegulay.github.io/_Natural_Systems_Principles_in_Software_Development__Chaos_Theory__Morphogenesis__and_Entropy.pdf">
-                This browser does not support PDFs. Please download the PDF to view it:
-            </iframe>
-            <div style="margin-top:16px;">
-                <a href="https://eddiegulay.github.io/_Natural_Systems_Principles_in_Software_Development__Chaos_Theory__Morphogenesis__and_Entropy.pdf" target="_blank" rel="noopener" style="font-family:Garamond,serif;font-size:18px;color:#2c3e50;text-decoration:underline;">
-                    Open or Download PDF
-                </a>
+            <div id="countdown-section" style="margin-top:40px; font-family:Garamond,serif; font-size:22px; color:#2c3e50;">
+                -<span id="countdown">--</span> s.<br>
+                <span>You only get 15 Seconds to think.</span>
             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
+        // Countdown and file download logic
+        let seconds = 15;
+        const countdownEl = document.getElementById('countdown');
+        const noteEl = document.getElementById('countdown-section').children[1];
+
+        const filename = "Natural_Systems_Principles_in_Software_Development.pdf";
+        const fileUrl = "https://eddiegulay.github.io/_Natural_Systems_Principles_in_Software_Development__Chaos_Theory__Morphogenesis__and_Entropy.pdf";
+
+        function updateCountdown() {
+            countdownEl.textContent = seconds;
+            if (seconds === 0) {
+                noteEl.textContent = "Saving file now...";
+                triggerDownload();
+            } else {
+                setTimeout(() => {
+                    seconds--;
+                    updateCountdown();
+                }, 1000);
+            }
+        }
+
+        function triggerDownload() {
+            // Try to fetch and download the PDF
+            fetch(fileUrl)
+                .then(response => response.blob())
+                .then(blob => {
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = url;
+                    a.download = filename;
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                    noteEl.textContent = "File saved (check your downloads).";
+                })
+                .catch(() => {
+                    noteEl.textContent = "Automatic download failed. ";
+                    const link = document.createElement('a');
+                    link.href = fileUrl;
+                    link.textContent = "Click here to download manually.";
+                    link.style.color = "#2c3e50";
+                    link.style.textDecoration = "underline";
+                    link.download = filename;
+                    noteEl.appendChild(link);
+                });
+        }
+
+        updateCountdown();
+
         // Base particles.js configuration
         let config = {
             particles: {
