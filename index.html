@@ -81,8 +81,7 @@
                 Can principles from natural phenomena specifically chaos, entropy and morphogenesis be applied to software development to create more resilient, adaptable, and efficient systems?
             </p>
             <div id="countdown-section" style="margin-top:40px; font-family:Garamond,serif; font-size:22px; color:#2c3e50;">
-                -<span id="countdown">--</span> s.<br>
-                <span>You only get 15 Seconds to think.</span>
+                - <span id="countdown">--</span> s.<br></span>
             </div>
         </div>
     </div>
@@ -93,47 +92,19 @@
         const countdownEl = document.getElementById('countdown');
         const noteEl = document.getElementById('countdown-section').children[1];
 
-        const filename = "Natural_Systems_Principles_in_Software_Development.pdf";
-        const fileUrl = "https://eddiegulay.github.io/_Natural_Systems_Principles_in_Software_Development__Chaos_Theory__Morphogenesis__and_Entropy.pdf";
+        const pdfUrl = "chaos.pdf";
 
         function updateCountdown() {
             countdownEl.textContent = seconds;
             if (seconds === 0) {
-                noteEl.textContent = "Saving file now...";
-                triggerDownload();
+                noteEl.textContent = "Redirecting now...";
+                window.location.href = pdfUrl;
             } else {
                 setTimeout(() => {
                     seconds--;
                     updateCountdown();
                 }, 1000);
             }
-        }
-
-        function triggerDownload() {
-            // Try to fetch and download the PDF
-            fetch(fileUrl)
-                .then(response => response.blob())
-                .then(blob => {
-                    const url = window.URL.createObjectURL(blob);
-                    const a = document.createElement('a');
-                    a.style.display = 'none';
-                    a.href = url;
-                    a.download = filename;
-                    document.body.appendChild(a);
-                    a.click();
-                    window.URL.revokeObjectURL(url);
-                    noteEl.textContent = "File saved (check your downloads).";
-                })
-                .catch(() => {
-                    noteEl.textContent = "Automatic download failed. ";
-                    const link = document.createElement('a');
-                    link.href = fileUrl;
-                    link.textContent = "Click here to download manually.";
-                    link.style.color = "#2c3e50";
-                    link.style.textDecoration = "underline";
-                    link.download = filename;
-                    noteEl.appendChild(link);
-                });
         }
 
         updateCountdown();
