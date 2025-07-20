@@ -1,251 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research: Natural Systems in Software Development</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #ffffff;
-            font-family: Arial, sans-serif;
-            color: #333;
-            overflow-x: hidden;
-        }
-        #particles-js {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            position: relative;
-            z-index: 1;
-            align-items: stretch;
-        }
-        .question-column {
-            flex: 1;
-            min-width: 300px;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .question-column h1 {
-            font-family: 'Garamond', serif;
-            font-size: 28px;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            line-height: 1.4;
-            letter-spacing: 0.02em;
-        }
-        .question-column p {
-            font-family: 'Garamond', serif;
-            font-size: 32px;
-            color: #2c3e50;
-            line-height: 1.6;
-            letter-spacing: 0.03em;
-            margin: 0;
-        }
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                gap: 20px;
-            }
-            .question-column {
-                padding: 20px;
-            }
-            .question-column h1 {
-                font-size: 24px;
-            }
-            .question-column p {
-                font-size: 24px;
-            }
-        }
-    </style>
+	<meta charset="utf-8" />
+	<title>./gulay</title>
+
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="address=no" />
+	<meta name="author" content="eddiegulay" />
+	<meta name="description" content="Eddie Gulay, exploring innovations, projects, and growth." />
+	<meta name="keywords"
+		content="Edgar, Gulay, Edgar Gulay, eddiegulay, software developer, Software developer in Dar es Salaam,">
+	<meta name="robots" content="index, follow">
+
+	<!-- Twitter data -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@eddiegulay">
+	<meta name="twitter:title" content="./gulay">
+	<meta name="twitter:description"
+		content="Eddie Gulay. Explore projects, tools, and contributions in the tech world.">
+	<meta name="twitter:image" content="assets/images/favico.png">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="./gulay" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://eddiegulay.github.io" />
+	<meta property="og:image" content="assets/images/favico.png" />
+	<meta property="og:description"
+		content="A deep dive into Eddie Gulay's journey in tech, from challenges to insights and growth." />
+	<meta property="og:site_name" content="./gulay" />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/favicon.svg">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/favicon.svg">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/favicon.svg">
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/favicon.svg">
+	<link rel="shortcut icon" href="assets/images/favicons/favicon.svg" type="image/svg+xml">
+	<link rel="icon" href="assets/images/favico.png">
+
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+	<link rel="stylesheet" type="text/css" href="assets/demo/style-demo.css" />
+
 </head>
-<body>
-    <div id="particles-js"></div>
-    <div class="container" style="max-width:900px;">
-        <div class="question-column" style="flex:1 1 100%; min-width:unset; max-width:100vw;">
-            <h1>Q:</h1>
-            <p>
-                Can principles from natural phenomena specifically chaos, entropy and morphogenesis be applied to software development to create more resilient, adaptable, and efficient systems?
-            </p>
-            <div id="countdown-section" style="margin-top:40px; font-family:Garamond,serif; font-size:22px; color:#2c3e50;">
-                - <span id="countdown">--</span> s.<br></span>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        // Countdown and file download logic
-        let seconds = 15;
-        const countdownEl = document.getElementById('countdown');
-        const noteEl = document.getElementById('countdown-section').children[1];
 
-        const pdfUrl = "chaos.pdf";
+<body class="preload decoration-points">
+	<div class="loading animated">
+		<div class="progress-bar"></div>
+		<div class="loading-wrap animated bounceInLeft">
+			<img class="logotype" src="assets/images/logo.svg" alt="./gulay">
+		</div>
+	</div>
 
-        function updateCountdown() {
-            countdownEl.textContent = seconds;
-            if (seconds === 0) {
-                noteEl.textContent = "Redirecting now...";
-                window.location.href = pdfUrl;
-            } else {
-                setTimeout(() => {
-                    seconds--;
-                    updateCountdown();
-                }, 1000);
-            }
-        }
+	<!-- Top -->
+	<nav class="navbar slideInDown">
+		<div class="mr-auto">
+			<a href="home.html">
+				<img class="logotype" src="assets/images/logo.svg" alt="./gulay">
+			</a>
+		</div>
+		<div class="ml-auto">
+			<a class="lang lang_active" href="#"></a>
+			<button class="hamburger" type="button">
+				<span class="hamburger-inner"></span>
+			</button>
+		</div>
+	</nav>
+	<!-- /Top -->
 
-        updateCountdown();
+	<!-- About -->
+	<div class="container-first container">
+		<div class="row align-items-end">
+			<div class="col-12 col-lg-6 col-xl-7 order-2 order-lg-1">
+				<div class="col__caption">
+					<h2 class="title title_h2 title_horizontal-line">Introducing Eddie Gulay: Full-Stack Software
+						Engineer</h2>
+					<p class="paragraph">
+						Eddie Gulay is a full-stack software engineer with practical experience in developing
+						user-focused web and mobile solutions. He refines his skills by learning from real-world
+						challenges and delivering functional results.
+					</p>
+					<div class="col_gap">
+						<p>
+							Eddie's work goes beyond writing code. He identifies problems and devises effective
+							solutions through various technologies, focusing on practicality and usability.
+						</p>
+						<p>
+							Every project is an opportunity for him to enhance his skills and ensure technology meets
+							real-world needs.
+							<br> <br>
+							<b><em><code>He Overthinks a lot, a lot!!</code></em></b>
+						</p>
+					</div>
 
-        // Base particles.js configuration
-        let config = {
-            particles: {
-                number: { value: 80, density: { enable: true, value_area: 800 } },
-                color: { value: '#2c3e50' },
-                shape: { type: 'circle', stroke: { width: 0, color: '#000000' } },
-                opacity: { value: 0.5, random: false },
-                size: { value: 3, random: true },
-                line_linked: {
-                    enable: true,
-                    distance: 150,
-                    color: '#2c3e50',
-                    opacity: 0.4,
-                    width: 1
-                },
-                move: {
-                    enable: true,
-                    speed: 2,
-                    direction: 'none',
-                    random: false,
-                    straight: false,
-                    out_mode: 'out',
-                    bounce: false
-                }
-            },
-            interactivity: {
-                detect_on: 'canvas',
-                events: {
-                    onhover: { enable: true, mode: 'grab' },
-                    onclick: { enable: true, mode: 'push' },
-                    resize: true
-                },
-                modes: {
-                    grab: { distance: 200, line_linked: { opacity: 1 } },
-                    push: { particles_nb: 4 }
-                }
-            },
-            retina_detect: true
-        };
+					<button class="mt-5 rounded bg-dark px-2 py-3 text-light btn hamburger">
+						View More
+					</button>
+				</div>
 
-        // Initialize particles.js
-        particlesJS('particles-js', config);
+			</div>
 
-        // State ranges for chaotic and entropic phases
-        const chaoticState = {
-            speed: { min: 8, max: 15 },
-            distance: { min: 180, max: 250 },
-            lineOpacity: { min: 0.7, max: 1.0 },
-            opacity: { min: 0.7, max: 0.9 },
-            number: { min: 100, max: 150 }
-        };
+			<div class="col-12 col-lg-6 col-xl-5 order-1 order-lg-2">
+				<div class="col__image-gutters bg reveal jarallax"
+					style="background-image: url(assets/images/eddie-home.jpg)"></div>
+			</div>
 
-        const entropicState = {
-            speed: { min: 0.5, max: 2 },
-            distance: { min: 80, max: 120 },
-            lineOpacity: { min: 0.1, max: 0.3 },
-            opacity: { min: 0.2, max: 0.4 },
-            number: { min: 40, max: 80 }
-        };
 
-        // Current and target values
-        let current = {
-            speed: config.particles.move.speed,
-            distance: config.particles.line_linked.distance,
-            lineOpacity: config.particles.line_linked.opacity,
-            opacity: config.particles.opacity.value,
-            number: config.particles.number.value
-        };
+		</div>
+	</div>
+	<!-- /About -->
 
-        let target = { ...current };
+	<!-- Footer -->
+	<footer class="footer container">
+		<div class="row">
+			<div class="col-md-6 footer__col">
+				<ul class="footer__contacts title">
+					<li><b>./</b> <code>gulay</code> </li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- /Footer -->
 
-        // Animation state
-        let transitionStart = performance.now();
-        let transitionDuration = Math.random() * 4000 + 1000; // Random duration 1-5s
-        let isTransitioning = false;
+	<!-- Menu -->
+	<div class="menu">
+		<canvas class="elastic-border"></canvas>
+		<div class="menu-inner">
+			<ul class="menu-container">
+				<li><a class="menu-container__item active" href="home.html"><span
+							class="menu-container__item_animated"><span>Meet Him.</span></span></a></li>
+				<li><a class="menu-container__item" href="projects.html"><span
+							class="menu-container__item_animated"><span>Projects.</span></span></a></li>
+				<li><a class="menu-container__item" href="contributions.html"><span
+							class="menu-container__item_animated"><span>Contributions.</span></span></a></li>
+				<li><a class="menu-container__item" href="tools.html"><span
+							class="menu-container__item_animated"><span>Skills & Tools.</span></span></a></li>
+				<li><a class="menu-container__item" href="contacts.html"><span
+							class="menu-container__item_animated"><span>Contact.</span></span></a></li>
+			</ul>
 
-        // Linear interpolation function
-        function lerp(start, end, t) {
-            return start + (end - start) * t;
-        }
+			<footer class="menu-footer">
+				<div class="row">
+					<div class="col-md-6 col-lg-4">
+						<ul class="footer__contacts">
+							<li>Connect with me on <a class="link_decoration"
+									href="https://x.com/eddiegulay">twitter</a> or <a class="link_decoration"
+									href="https://instagram.com/eddiegulay">📸 instagram</a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<div class="ef-background"></div>
+	<!-- /Menu -->
 
-        // Random value within range
-        function randomInRange(min, max) {
-            return Math.random() * (max - min) + min;
-        }
 
-        // Set new random target state (chaotic or entropic)
-        function setNewTarget() {
-            const isChaotic = Math.random() < 0.5; // 50% chance for chaotic or entropic
-            const state = isChaotic ? chaoticState : entropicState;
+	<!-- JavaScripts -->
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/common.js"></script>
 
-            target.speed = randomInRange(state.speed.min, state.speed.max);
-            target.distance = randomInRange(state.distance.min, state.distance.max);
-            target.lineOpacity = randomInRange(state.lineOpacity.min, state.lineOpacity.max);
-            target.opacity = randomInRange(state.opacity.min, state.opacity.max);
-            target.number = Math.round(randomInRange(state.number.min, state.number.max));
-
-            transitionStart = performance.now();
-            transitionDuration = Math.random() * 4000 + 1000; // Random duration 1-5s
-            isTransitioning = true;
-        }
-
-        // Animation loop
-        function animate() {
-            const now = performance.now();
-            const elapsed = now - transitionStart;
-            const t = Math.min(elapsed / transitionDuration, 1); // Progress [0,1]
-
-            // Interpolate values
-            current.speed = lerp(current.speed, target.speed, t);
-            current.distance = lerp(current.distance, target.distance, t);
-            current.lineOpacity = lerp(current.lineOpacity, target.lineOpacity, t);
-            current.opacity = lerp(current.opacity, target.opacity, t);
-            current.number = Math.round(lerp(current.number, target.number, t));
-
-            // Update config
-            config.particles.move.speed = current.speed;
-            config.particles.line_linked.distance = current.distance;
-            config.particles.line_linked.opacity = current.lineOpacity;
-            config.particles.opacity.value = current.opacity;
-            config.particles.number.value = current.number;
-
-            // Apply updated config
-            particlesJS('particles-js', config);
-
-            // Start new transition if complete
-            if (t >= 1 && isTransitioning) {
-                isTransitioning = false;
-                setNewTarget();
-            }
-
-            requestAnimationFrame(animate);
-        }
-
-        // Start animation
-        setNewTarget();
-        animate();
-    </script>
 </body>
+
+
 </html>
