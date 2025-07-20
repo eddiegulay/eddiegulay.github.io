@@ -1,0 +1,181 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Quiet Space</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scene 0 – Ambient Threshold Overlay -->
+    <div id="scene0" class="scene0">
+        <img src="brush-stroke.png" class="scene0-stroke" alt="Slow forming brush stroke">
+    </div>
+
+    <div class="background-texture"></div>
+
+    <nav class="main-nav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#poetry" class="nav-link">Poetry</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="page-section">
+            <header>
+                <h1 class="name">Kaelan</h1>
+                <img src="brush-stroke.png" class="brush-stroke" alt="A decorative brush stroke">
+            </header>
+            <div class="intro">
+                <p>A free spirit, building meaning through code, words, and silence.</p>
+            </div>
+            <div class="seal-mark"></div>
+        </section>
+
+        <section id="micro-intro" class="page-section micro-intro">
+            <p id="typewriter-text" class="typewriter-text"></p>
+        </section>
+
+        <section id="about" class="page-section">
+            <h2>About</h2>
+            <div class="divider">
+                <img src="brush-stroke.png" alt="divider" />
+            </div>
+            <div class="about-carousel-container">
+                <div class="about-carousel-track">
+                    <!-- Card 1: Software Engineering -->
+                    <div class="about-card" style="background-image: url('card-code.png')">
+                        <div class="card-vertical-text">Code</div>
+                        <div class="card-caption">Crafting elegant solutions in AI and data, I weave logic with creativity, building bridges to tomorrow's possibilities.</div>
+                    </div>
+                    <!-- Card 2: AI Research -->
+                    <div class="about-card" style="background-image: url('card-curiosity.png')">
+                        <div class="card-vertical-text">Curiosity</div>
+                        <div class="card-caption">Diving into the unknown, I explore AI's frontiers, chasing insights like stars in an endless digital sky.</div>
+                    </div>
+                    <!-- Card 3: Minimalism -->
+                    <div class="about-card" style="background-image: url('card-simplicity.png')">
+                        <div class="card-vertical-text">Simplicity</div>
+                        <div class="card-caption">Inspired by serene Eastern aesthetics, I design life with clean lines and intentional beauty, where less speaks volumes.</div>
+                    </div>
+                    <!-- Card 4: Music and Poetry -->
+                    <div class="about-card" style="background-image: url('card-soul.png')">
+                        <div class="card-vertical-text">Soul</div>
+                        <div class="card-caption">In melodies and nature's verses, I find truth—raw, romantic, a heartbeat echoing the forest's song.</div>
+                    </div>
+                    <!-- Card 5: The Human Brain -->
+                    <div class="about-card" style="background-image: url('card-wonder.png')">
+                        <div class="card-vertical-text">Wonder</div>
+                        <div class="card-caption">Captivated by the mind's dance of neurons, I seek its mysteries, blending science with the art of thought.</div>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button id="prev-card" class="carousel-button">&#10229;</button>
+                    <button id="next-card" class="carousel-button">&#10230;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="page-section content-section">
+            <h2>AI & Work</h2>
+            <div class="divider">
+                <img src="brush-stroke.png" alt="divider" />
+            </div>
+            <p class="section-tagline">I build tools that think, learn, and tell stories with data.</p>
+            <div class="work-grid">
+                <div class="work-item">
+                    <h3>Project Title One</h3>
+                    <p>A brief, elegant description of a project focusing on the 'why' and the creative challenge, rather than dense technical jargon.</p>
+                </div>
+                <div class="work-item">
+                    <h3>Project Title Two</h3>
+                    <p>This is where another project would live, presented as a clean "island" of thought. Simple, visual, and focused on curiosity.</p>
+                </div>
+                 <div class="work-item">
+                    <h3>Project Title Three</h3>
+                    <p>Each project is a carefully placed stone in a garden of ideas, inviting exploration without overwhelming the visitor.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="poetry" class="page-section content-section dark-section">
+            <div class="dark-section-content">
+                <h2>Poetry & Music</h2>
+                <div class="divider">
+                    <img src="brush-stroke.png" alt="divider" />
+                </div>
+                <div class="poetry-grid">
+                    <div class="poetry-item">
+                        <h4>First Light</h4>
+                        <p>A quiet dawn,<br>the world awaits<br>one single breath.</p>
+                    </div>
+                    <div class="poetry-item">
+                        <h4>Silent Pond</h4>
+                        <p>Ripples expand<br>from a thought unseen,<br>water remembers.</p>
+                    </div>
+                    <div class="poetry-item">
+                        <h4>Ink on Paper</h4>
+                        <p>The brush stroke ends,<br>but the line continues<br>in the mind's eye.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cognitive-observatory" class="page-section content-section cognitive-observatory">
+            <h2>Cognitive Observatory</h2>
+            <div class="divider"><img src="brush-stroke.png" alt="divider"></div>
+            <div class="obs-content">
+                <div class="obs-item"><h3>Patterns & Perception</h3><p>How we see structure in noise.</p></div>
+                <div class="obs-item"><h3>Attention & Space</h3><p>Why minimal environments calm cognition.</p></div>
+                <div class="obs-item"><h3>Learning Systems</h3><p>Parallels between synapses and machine learning weights.</p></div>
+                <div class="obs-item"><h3>Emotion in Data</h3><p>Signals we ignore when we optimize for metrics alone.</p></div>
+            </div>
+        </section>
+
+        <section id="design-ethos" class="page-section content-section design-ethos">
+            <h2>Design Ethos Studio</h2>
+            <div class="divider"><img src="brush-stroke.png" alt="divider"></div>
+            <div class="contrast-pairs">
+                <div class="contrast-item"><h3>Cluttered vs. Essential</h3><p>Remove until clarity appears.</p></div>
+                <div class="contrast-item"><h3>Overdesigned vs. Balanced</h3><p>Space is not empty—it lets meaning resonate.</p></div>
+                <div class="contrast-item"><h3>Feature Creep vs. Focused Utility</h3><p>Every feature must serve the whole.</p></div>
+            </div>
+        </section>
+
+        <section id="contact" class="page-section content-section">
+            <h2>Contact</h2>
+            <div class="divider">
+                <img src="brush-stroke.png" alt="divider" />
+            </div>
+            <p class="section-tagline">Let's create, explore, or just talk about ideas that matter.</p>
+            <form class="contact-form">
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p class="closing-line">the door is always open</p>
+        </section>
+
+        <footer>
+            <p>Exploring the intersection of technology and humanity.</p>
+        </footer>
+    </div>
+
+    <!-- Poetry Slide Container -->
+    <div id="poetry-container">
+        <span id="poetry-line" class="poetry-line"></span>
+    </div>
+
+    <!-- Scene 8 – Closing Frame -->
+    <div class="closing-frame">
+        <img src="brush-stroke.png" class="closing-stroke" alt="closing stroke">
+        <p class="closing-microcopy">Thank you for visiting. Build with care. Leave room for signal.</p>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
